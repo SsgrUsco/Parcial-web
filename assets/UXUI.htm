@@ -1,0 +1,1751 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v25.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Diseño UX y UI. Qué son y cómo funcionan en mi web.</title>
+	<meta name="description" content="El diseño UX y el diseño UI trabajan en armonía para conseguir una página web 100% funcional, haciendo de la usabilidad y el diseño una mezcla perfecta." />
+	<link rel="canonical" href="https://asiescomo.com/diseno-ux-y-ui-en-mi-web/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Diseño UX y UI. Qué son y cómo funcionan en mi web." />
+	<meta property="og:description" content="El diseño UX y el diseño UI trabajan en armonía para conseguir una página web 100% funcional, haciendo de la usabilidad y el diseño una mezcla perfecta." />
+	<meta property="og:url" content="https://asiescomo.com/diseno-ux-y-ui-en-mi-web/" />
+	<meta property="og:site_name" content="Como - Estudio Creativo" />
+	<meta property="article:published_time" content="2019-12-27T10:45:37+00:00" />
+	<meta property="article:modified_time" content="2022-01-03T07:16:19+00:00" />
+	<meta property="og:image" content="https://asiescomo.com/wp-content/uploads/featured_ux-ui.jpg" />
+	<meta property="og:image:width" content="900" />
+	<meta property="og:image:height" content="500" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Lourdes" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Escrito por" />
+	<meta name="twitter:data1" content="Lourdes" />
+	<meta name="twitter:label2" content="Tiempo de lectura" />
+	<meta name="twitter:data2" content="5 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/#article","isPartOf":{"@id":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/"},"author":{"name":"Lourdes","@id":"https://asiescomo.com/#/schema/person/0c240ba0e09ec675d70c229cea73cc06"},"headline":"Diseño UX y UI. Qué es y cómo funciona en mi web.","datePublished":"2019-12-27T10:45:37+00:00","dateModified":"2022-01-03T07:16:19+00:00","mainEntityOfPage":{"@id":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/"},"wordCount":915,"commentCount":0,"publisher":{"@id":"https://asiescomo.com/#organization"},"image":{"@id":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/#primaryimage"},"thumbnailUrl":"https://asiescomo.com/wp-content/uploads/featured_ux-ui.jpg","articleSection":["Diseño web","Wordpress"],"inLanguage":"es","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://asiescomo.com/diseno-ux-y-ui-en-mi-web/#respond"]}]},{"@type":"WebPage","@id":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/","url":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/","name":"Diseño UX y UI. Qué son y cómo funcionan en mi web.","isPartOf":{"@id":"https://asiescomo.com/#website"},"primaryImageOfPage":{"@id":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/#primaryimage"},"image":{"@id":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/#primaryimage"},"thumbnailUrl":"https://asiescomo.com/wp-content/uploads/featured_ux-ui.jpg","datePublished":"2019-12-27T10:45:37+00:00","dateModified":"2022-01-03T07:16:19+00:00","description":"El diseño UX y el diseño UI trabajan en armonía para conseguir una página web 100% funcional, haciendo de la usabilidad y el diseño una mezcla perfecta.","inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://asiescomo.com/diseno-ux-y-ui-en-mi-web/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://asiescomo.com/diseno-ux-y-ui-en-mi-web/#primaryimage","url":"https://asiescomo.com/wp-content/uploads/featured_ux-ui.jpg","contentUrl":"https://asiescomo.com/wp-content/uploads/featured_ux-ui.jpg","width":900,"height":500},{"@type":"WebSite","@id":"https://asiescomo.com/#website","url":"https://asiescomo.com/","name":"Como - Estudio Creativo","description":"Estudio de branding, diseño web y diseño gráfico","publisher":{"@id":"https://asiescomo.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://asiescomo.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"https://asiescomo.com/#organization","name":"Como - Estudio Creativo","url":"https://asiescomo.com/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://asiescomo.com/#/schema/logo/image/","url":"https://asiescomo.com/wp-content/uploads/logo-como.svg","contentUrl":"https://asiescomo.com/wp-content/uploads/logo-como.svg","caption":"Como - Estudio Creativo"},"image":{"@id":"https://asiescomo.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://asiescomo.com/#/schema/person/0c240ba0e09ec675d70c229cea73cc06","name":"Lourdes","image":{"@type":"ImageObject","inLanguage":"es","@id":"https://asiescomo.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/3bd7078d9a716e126ac4ff8217d6347da6f21c834d1ecfc40580dcfa90f9641f?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/3bd7078d9a716e126ac4ff8217d6347da6f21c834d1ecfc40580dcfa90f9641f?s=96&d=mm&r=g","caption":"Lourdes"},"url":"https://asiescomo.com/author/lourdes/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="amphtml" href="https://asiescomo.com/diseno-ux-y-ui-en-mi-web/amp/" /><meta name="generator" content="AMP for WP 1.1.4"/>
+<link rel="alternate" type="application/rss+xml" title="Como - Estudio Creativo &raquo; Feed" href="https://asiescomo.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Como - Estudio Creativo &raquo; Feed de los comentarios" href="https://asiescomo.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Como - Estudio Creativo &raquo; Comentario Diseño UX y UI. Qué es y cómo funciona en mi web. del feed" href="https://asiescomo.com/diseno-ux-y-ui-en-mi-web/feed/" />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://asiescomo.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.1' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='mortgage-calculator-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/mortgage-calculator/css/main.css?ver=1737442108' media='all' />
+<link rel='stylesheet' id='cmplz-general-css' href='https://asiescomo.com/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=1744839893' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://asiescomo.com/wp-content/themes/hello-elementor/theme.min.css?ver=3.0.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-child-style-css' href='https://asiescomo.com/wp-content/themes/hello-theme-child-master/style.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://asiescomo.com/wp-content/themes/hello-elementor/style.min.css?ver=3.0.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://asiescomo.com/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.0.1' media='all' />
+<link rel='stylesheet' id='e-motion-fx-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='widget-social-icons-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='e-apple-webkit-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='widget-text-editor-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='e-animation-headShake-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/lib/animations/styles/headShake.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='widget-form-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='widget-nav-menu-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='widget-post-info-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/widget-post-info.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-regular-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=1737442108' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=1737442108' media='all' />
+<link rel='stylesheet' id='widget-share-buttons-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css?ver=3.27.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=1737442108' media='all' />
+<link rel='stylesheet' id='widget-table-of-contents-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/widget-table-of-contents.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='widget-posts-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='e-animation-slideInRight-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/lib/animations/styles/slideInRight.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='e-popup-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='widget-flip-box-css' href='https://asiescomo.com/wp-content/plugins/elementor-pro/assets/css/widget-flip-box.min.css?ver=3.27.0' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='e-animation-fadeIn-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.28.4' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1737442108' media='all' />
+<link rel='stylesheet' id='elementor-post-8-css' href='https://asiescomo.com/wp-content/uploads/elementor/css/post-8.css?ver=1737442095' media='all' />
+<link data-minify="1" rel='stylesheet' id='jet-tabs-frontend-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/jet-tabs/assets/css/jet-tabs-frontend.css?ver=1737442108' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-5-all-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1737442108' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://asiescomo.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='elementor-post-121-css' href='https://asiescomo.com/wp-content/uploads/elementor/css/post-121.css?ver=1737442095' media='all' />
+<link rel='stylesheet' id='elementor-post-337-css' href='https://asiescomo.com/wp-content/uploads/elementor/css/post-337.css?ver=1737442095' media='all' />
+<link rel='stylesheet' id='elementor-post-6531-css' href='https://asiescomo.com/wp-content/uploads/elementor/css/post-6531.css?ver=1737442095' media='all' />
+<link rel='stylesheet' id='elementor-post-983-css' href='https://asiescomo.com/wp-content/uploads/elementor/css/post-983.css?ver=1737442095' media='all' />
+<link rel='stylesheet' id='elementor-post-735-css' href='https://asiescomo.com/wp-content/uploads/elementor/css/post-735.css?ver=1737442095' media='all' />
+<style id='akismet-widget-style-inline-css'>
+
+			.a-stats {
+				--akismet-color-mid-green: #357b49;
+				--akismet-color-white: #fff;
+				--akismet-color-light-grey: #f6f7f7;
+
+				max-width: 350px;
+				width: auto;
+			}
+
+			.a-stats * {
+				all: unset;
+				box-sizing: border-box;
+			}
+
+			.a-stats strong {
+				font-weight: 600;
+			}
+
+			.a-stats a.a-stats__link,
+			.a-stats a.a-stats__link:visited,
+			.a-stats a.a-stats__link:active {
+				background: var(--akismet-color-mid-green);
+				border: none;
+				box-shadow: none;
+				border-radius: 8px;
+				color: var(--akismet-color-white);
+				cursor: pointer;
+				display: block;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+				font-weight: 500;
+				padding: 12px;
+				text-align: center;
+				text-decoration: none;
+				transition: all 0.2s ease;
+			}
+
+			/* Extra specificity to deal with TwentyTwentyOne focus style */
+			.widget .a-stats a.a-stats__link:focus {
+				background: var(--akismet-color-mid-green);
+				color: var(--akismet-color-white);
+				text-decoration: none;
+			}
+
+			.a-stats a.a-stats__link:hover {
+				filter: brightness(110%);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.16);
+			}
+
+			.a-stats .count {
+				color: var(--akismet-color-white);
+				display: block;
+				font-size: 1.5em;
+				line-height: 1.4;
+				padding: 0 13px;
+				white-space: nowrap;
+			}
+		
+</style>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1744844222' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://asiescomo.com/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1744844222' media='all' />
+<script src="https://asiescomo.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://asiescomo.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.28.4" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="https://asiescomo.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://asiescomo.com/wp-json/wp/v2/posts/5850" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://asiescomo.com/xmlrpc.php?rsd" />
+
+<link rel='shortlink' href='https://asiescomo.com/?p=5850' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://asiescomo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fasiescomo.com%2Fdiseno-ux-y-ui-en-mi-web%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://asiescomo.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fasiescomo.com%2Fdiseno-ux-y-ui-en-mi-web%2F&#038;format=xml" />
+			<style>.cmplz-hidden {
+					display: none !important;
+				}</style><meta name="generator" content="Elementor 3.28.4; features: additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<!-- Hotjar Tracking Code for https://asiescomo.com/ -->
+<script type="text/plain" data-service="hotjar" data-category="marketing">
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3223321,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://asiescomo.com/wp-content/uploads/favicon-como.svg" sizes="32x32" />
+<link rel="icon" href="https://asiescomo.com/wp-content/uploads/favicon-como.svg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://asiescomo.com/wp-content/uploads/favicon-como.svg" />
+<meta name="msapplication-TileImage" content="https://asiescomo.com/wp-content/uploads/favicon-como.svg" />
+		<style id="wp-custom-css">
+			
+/* PORTFOLIO */
+
+.elementor-portfolio-item__overlay {    
+	
+    padding: 25px 25px 50px 25px;
+   flex-direction: column-reverse;
+    justify-content: unset;
+    text-align: left;
+	
+   
+}
+
+.elementor-tab-title.elementor-tab-desktop-title.elementor-active {
+	border-bottom: 1px solid #FF9056 !important;
+	margin-right: 0 !important
+}
+
+.elementor-tab-title {
+	border-bottom: 1px solid #e6e6e6 !important;
+	margin-right: 20px;
+}
+
+
+.subtitulo-portfolio {
+	    font-size: 20px;
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #FF9056;
+    font-weight: 500;
+}
+
+.comment-content a {
+	text-decoration: underline;
+	color: #FF9056;
+}
+
+.comment-content a:hover {
+	text-decoration: none;
+	anchor-point
+}
+
+.post-password-form {max-width: 610px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.post-password-form p label {font-weight: 600; margin: 0 0 21px 0px;}
+
+.post-password-form p {margin:0 0 50px 0}
+
+h1.entry-title	{max-width: 950px;
+    margin: auto; text-align:center; margin-top: 70px;}
+
+.post-7926  h1 {display:block;}
+
+
+/*BLOG*/
+
+.entrada-blog li	{padding-top:20px;}
+.entrada-blog li::marker	{font-weight: bold; font-size:25px; color:#FF9056;}
+
+		</style>
+		<meta name="generator" content="WP Rocket 3.18.3" data-wpr-features="wpr_delay_js wpr_minify_js wpr_minify_css wpr_preload_links" /></head>
+<body data-rsssl=1 data-cmplz=1 class="wp-singular post-template-default single single-post postid-5850 single-format-standard wp-custom-logo wp-theme-hello-elementor wp-child-theme-hello-theme-child-master elementor-default elementor-kit-8 elementor-page-6531">
+
+
+<a class="skip-link screen-reader-text" href="#content">Ir al contenido</a>
+
+		<header data-rocket-location-hash="b411784f34190462d6b57f8a5bede89f" data-elementor-type="header" data-elementor-id="121" class="elementor elementor-121 elementor-location-header" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-8178ec1 elementor-section-full_width elementor-hidden-desktop elementor-hidden-tablet elementor-section-height-default elementor-section-height-default" data-id="8178ec1" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div data-rocket-location-hash="82f6c6a00e9a86a2eaa3cc6e8d136714" class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b3b139c" data-id="b3b139c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-26b49e2 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="26b49e2" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;}" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://asiescomo.com">
+			<img src="https://asiescomo.com/wp-content/uploads/logo-como.svg" class="attachment-full size-full wp-image-40" alt="" />				</a>
+											</div>
+				</div>
+				<div class="elementor-element elementor-element-13511d0 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-html" data-id="13511d0" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="menu-center">
+  
+  <a href="#" class="btn-header">menú</a>
+  
+</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-df3cad7 elementor-widget-mobile__width-initial elementor-fixed open-pop-mobile elementor-widget elementor-widget-image" data-id="df3cad7" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;fixed&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img src="https://asiescomo.com/wp-content/uploads/menu-al-punto.svg" class="attachment-full size-full wp-image-950" alt="" />															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-18bb425 elementor-section-full_width elementor-hidden-phone elementor-section-height-default elementor-section-height-default" data-id="18bb425" data-element_type="section" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+						<div data-rocket-location-hash="b3be091174dcd2d7573499587c59c9d9" class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1a7ad7e" data-id="1a7ad7e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ee060ea elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="ee060ea" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_mouse&quot;:&quot;yes&quot;}" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="https://asiescomo.com">
+			<img src="https://asiescomo.com/wp-content/uploads/logo-como.svg" class="attachment-full size-full wp-image-40" alt="" />				</a>
+											</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2039ec4" data-id="2039ec4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-512f85f open-menu elementor-widget elementor-widget-html" data-id="512f85f" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="menu-center open-menu">
+  
+  <a class="btn-header">menú</a>
+  
+</div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-99b0c14" data-id="99b0c14" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-23b05d3 cta-menu elementor-widget elementor-widget-html" data-id="23b05d3" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="btn-container">
+<a href="https://asiescomo.com/portfolio/" class="btn btn2">portfolio</a>
+</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-347f3ca elementor-shape-circle elementor-grid-1 e-grid-align-right elementor-fixed elementor-widget elementor-widget-social-icons" data-id="347f3ca" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;fixed&quot;}" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-b48f6c3" href="https://www.instagram.com/comocreativo/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9719a9d" href="https://www.facebook.com/comocreativo" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ec033d7 elementor-section-full_width elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-height-default elementor-section-height-default" data-id="ec033d7" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+						<div data-rocket-location-hash="d980f33cebda42b9db2d1a70c42a55aa" class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-875a8fd" data-id="875a8fd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-36287ae elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="36287ae" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div data-rocket-location-hash="2aac35cf2c11024fe90c54c8a041fb0e" class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-23f51a9" data-id="23f51a9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-af6f57f elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="af6f57f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Somos Agentes digitalizadores. Lanza tu proyecto con el </p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-86bee9e elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-heading" data-id="86bee9e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;headShake&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<span class="elementor-heading-title elementor-size-default"><a href="https://asiescomo.com/programa-kit-digital/">Kit digital</a></span>				</div>
+				</div>
+				<div class="elementor-element elementor-element-88680bf elementor-widget__width-initial elementor-widget elementor-widget-button" data-id="88680bf" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://asiescomo.com/programa-kit-digital/#form">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon">
+				<i aria-hidden="true" class="fas fa-arrow-right"></i>			</span>
+									<span class="elementor-button-text">¡Pregúntanos!</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</header>
+				<div data-rocket-location-hash="2f5ab37a72229be9c7ed26f1fb4d1b23" data-elementor-type="single-post" data-elementor-id="6531" class="elementor elementor-6531 elementor-location-single post-5850 post type-post status-publish format-standard has-post-thumbnail hentry category-diseno-web category-wordpress" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-3481c0d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3481c0d" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div data-rocket-location-hash="9f3cdebd482219aef067dbc56403b8d3" class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2df2a7e col-85" data-id="2df2a7e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-76c4c2b elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="76c4c2b" data-element_type="widget" data-widget_type="theme-post-title.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Diseño UX y UI. Qué es y cómo funciona en mi web.</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-19700f9 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-post-info" data-id="19700f9" data-element_type="widget" data-widget_type="post-info.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-inline-items elementor-icon-list-items elementor-post-info">
+								<li class="elementor-icon-list-item elementor-repeater-item-c25fc75 elementor-inline-item" itemprop="author">
+						<a href="https://asiescomo.com/author/lourdes/">
+											<span class="elementor-icon-list-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.56 86.56"><defs><style>.cls-1{fill:#e84c4f;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M43.28,86.56A43.28,43.28,0,1,1,86.56,43.28,43.33,43.33,0,0,1,43.28,86.56ZM43.28,7A36.28,36.28,0,1,0,79.56,43.28,36.31,36.31,0,0,0,43.28,7Z"></path><path class="cls-1" d="M70.28,75.41a3.51,3.51,0,0,1-3.09-1.86,27,27,0,0,0-47.53-.21A3.5,3.5,0,0,1,13.51,70a34,34,0,0,1,59.86.27A3.5,3.5,0,0,1,71.92,75,3.44,3.44,0,0,1,70.28,75.41Z"></path><path class="cls-1" d="M43.28,47.33A16.94,16.94,0,1,1,60.22,30.39,17,17,0,0,1,43.28,47.33Zm0-26.88a9.94,9.94,0,1,0,9.94,9.94A10,10,0,0,0,43.28,20.45Z"></path></g></g></svg>							</span>
+									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-author">
+										Lourdes					</span>
+									</a>
+				</li>
+				<li class="elementor-icon-list-item elementor-repeater-item-9e5d7e8 elementor-inline-item" itemprop="datePublished">
+						<a href="https://asiescomo.com/2019/12/27/">
+											<span class="elementor-icon-list-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.93 98.66"><defs><style>.cls-1{fill:#e84c4f;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M84.1,98.66H14.83A14.85,14.85,0,0,1,0,83.82V24.16A14.85,14.85,0,0,1,14.83,9.32H84.1A14.85,14.85,0,0,1,98.93,24.16V83.82A14.85,14.85,0,0,1,84.1,98.66ZM14.83,16.32A7.84,7.84,0,0,0,7,24.16V83.82a7.84,7.84,0,0,0,7.83,7.84H84.1a7.84,7.84,0,0,0,7.83-7.84V24.16a7.84,7.84,0,0,0-7.83-7.84Z"></path><path class="cls-1" d="M26.56,21.65a3.5,3.5,0,0,1-3.5-3.5V3.5a3.5,3.5,0,0,1,7,0V18.15A3.5,3.5,0,0,1,26.56,21.65Z"></path><path class="cls-1" d="M72.37,21.65a3.5,3.5,0,0,1-3.5-3.5V3.5a3.5,3.5,0,0,1,7,0V18.15A3.5,3.5,0,0,1,72.37,21.65Z"></path><path class="cls-1" d="M95.43,38.31H3.5a3.5,3.5,0,0,1,0-7H95.43a3.5,3.5,0,0,1,0,7Z"></path><path class="cls-1" d="M27.75,56.56H17.58a3.5,3.5,0,1,1,0-7H27.75a3.5,3.5,0,0,1,0,7Z"></path><path class="cls-1" d="M54.55,56.56H44.38a3.5,3.5,0,1,1,0-7H54.55a3.5,3.5,0,0,1,0,7Z"></path><path class="cls-1" d="M81.35,56.56H71.19a3.5,3.5,0,0,1,0-7H81.35a3.5,3.5,0,0,1,0,7Z"></path><path class="cls-1" d="M27.75,77.73H17.58a3.5,3.5,0,1,1,0-7H27.75a3.5,3.5,0,0,1,0,7Z"></path><path class="cls-1" d="M54.55,77.73H44.38a3.5,3.5,0,0,1,0-7H54.55a3.5,3.5,0,0,1,0,7Z"></path><path class="cls-1" d="M81.35,77.73H71.19a3.5,3.5,0,0,1,0-7H81.35a3.5,3.5,0,0,1,0,7Z"></path></g></g></svg>							</span>
+									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-date">
+										<time>diciembre 27, 2019</time>					</span>
+									</a>
+				</li>
+				<li class="elementor-icon-list-item elementor-repeater-item-954b639 elementor-inline-item">
+										<span class="elementor-icon-list-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.68 94.68"><defs><style>.cls-1{fill:#e84c4f;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M75.94,94.68H9.06A9.07,9.07,0,0,1,0,85.62V16.13A9.07,9.07,0,0,1,9.06,7.07H40.72a3.5,3.5,0,0,1,0,7H9.06A2.06,2.06,0,0,0,7,16.13V85.62a2.06,2.06,0,0,0,2.06,2.06H75.94A2.06,2.06,0,0,0,78,85.62V62.8a3.5,3.5,0,0,1,7,0V85.62A9.07,9.07,0,0,1,75.94,94.68Z"></path><path class="cls-1" d="M72.31,56.74a28.37,28.37,0,1,1,28.37-28.37A28.4,28.4,0,0,1,72.31,56.74ZM72.31,7A21.37,21.37,0,1,0,93.68,28.37,21.39,21.39,0,0,0,72.31,7Z"></path><path class="cls-1" d="M84.65,32.87H72.31a3.5,3.5,0,0,1-3.5-3.5V12.8a3.5,3.5,0,1,1,7,0V25.87h8.84a3.5,3.5,0,1,1,0,7Z"></path><path class="cls-1" d="M64.57,74.11H13.1a3.5,3.5,0,1,1,0-7H64.57a3.5,3.5,0,0,1,0,7Z"></path><path class="cls-1" d="M45.53,57.66H14.83a3.5,3.5,0,1,1,0-7h30.7a3.5,3.5,0,0,1,0,7Z"></path><path class="cls-1" d="M32.43,39.94H14.83a3.5,3.5,0,1,1,0-7h17.6a3.5,3.5,0,1,1,0,7Z"></path></g></g></svg>							</span>
+									<span class="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-time">
+										<time>10:45</time>					</span>
+								</li>
+				</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-cb66ce0 elementor-share-buttons--view-icon elementor-share-buttons--skin-flat elementor-grid-1 elementor-share-buttons--color-custom elementor-hidden-tablet elementor-hidden-phone elementor-share-buttons--shape-square elementor-widget elementor-widget-share-buttons" data-id="cb66ce0" data-element_type="widget" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_offset&quot;:100,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}" data-widget_type="share-buttons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-grid">
+								<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_facebook"
+							role="button"
+							tabindex="0"
+							aria-label="Compartir en facebook"
+						>
+															<span class="elementor-share-btn__icon">
+								<i class="fab fa-facebook" aria-hidden="true"></i>							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_twitter"
+							role="button"
+							tabindex="0"
+							aria-label="Compartir en twitter"
+						>
+															<span class="elementor-share-btn__icon">
+								<i class="fab fa-twitter" aria-hidden="true"></i>							</span>
+																				</div>
+					</div>
+									<div class="elementor-grid-item">
+						<div
+							class="elementor-share-btn elementor-share-btn_linkedin"
+							role="button"
+							tabindex="0"
+							aria-label="Compartir en linkedin"
+						>
+															<span class="elementor-share-btn__icon">
+								<i class="fab fa-linkedin" aria-hidden="true"></i>							</span>
+																				</div>
+					</div>
+						</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8f87332 elementor-widget elementor-widget-theme-post-featured-image elementor-widget-image" data-id="8f87332" data-element_type="widget" data-widget_type="theme-post-featured-image.default">
+				<div class="elementor-widget-container">
+															<img width="900" height="500" src="https://asiescomo.com/wp-content/uploads/featured_ux-ui.jpg" class="attachment-full size-full wp-image-6583" alt="" srcset="https://asiescomo.com/wp-content/uploads/featured_ux-ui.jpg 900w, https://asiescomo.com/wp-content/uploads/featured_ux-ui-300x167.jpg 300w, https://asiescomo.com/wp-content/uploads/featured_ux-ui-768x427.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-c3f625c elementor-toc--minimized-on-tablet elementor-widget elementor-widget-table-of-contents" data-id="c3f625c" data-element_type="widget" data-settings="{&quot;exclude_headings_by_selector&quot;:[],&quot;min_height&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;headings_by_tags&quot;:[&quot;h2&quot;,&quot;h3&quot;,&quot;h4&quot;],&quot;marker_view&quot;:&quot;bullets&quot;,&quot;icon&quot;:{&quot;value&quot;:&quot;fas fa-circle&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;no_headings_message&quot;:&quot;No se ha encontrado ning\u00fan encabezado en esta p\u00e1gina.&quot;,&quot;minimize_box&quot;:&quot;yes&quot;,&quot;minimized_on&quot;:&quot;tablet&quot;,&quot;hierarchical_view&quot;:&quot;yes&quot;,&quot;min_height_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;min_height_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="table-of-contents.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toc__header">
+			<div class="elementor-toc__header-title">
+				Índice de contenido			</div>
+							<div class="elementor-toc__toggle-button elementor-toc__toggle-button--expand" role="button" tabindex="0" aria-controls="elementor-toc__c3f625c" aria-expanded="true" aria-label="Abrir la tabla de contenidos"><i aria-hidden="true" class="fas fa-chevron-down"></i></div>
+				<div class="elementor-toc__toggle-button elementor-toc__toggle-button--collapse" role="button" tabindex="0" aria-controls="elementor-toc__c3f625c" aria-expanded="true" aria-label="Cerrar la tabla de contenidos"><i aria-hidden="true" class="fas fa-chevron-up"></i></div>
+					</div>
+		<div id="elementor-toc__c3f625c" class="elementor-toc__body">
+			<div class="elementor-toc__spinner-container">
+				<i class="elementor-toc__spinner eicon-animation-spin eicon-loading" aria-hidden="true"></i>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-edf66e0 entrada-blog elementor-widget elementor-widget-theme-post-content" data-id="edf66e0" data-element_type="widget" data-widget_type="theme-post-content.default">
+				<div class="elementor-widget-container">
+					
+<p>Seguramente has oído hablar del diseño UX/UI. Cuando se habla de diseño web, a menudo se confunden estos dos términos que van siempre de la mano. Y no es de extrañar porque, aunque son dos cosas diferentes y cada uno tiene su cometido, el diseño UX y el diseño UI trabajan en armonía para conseguir una página web 100% funcional.</p>
+
+
+
+<p>Lo que todos sabemos es que nuestra página web tiene que tener diseño UX y diseño UI, pero ¿qué significa esto realmente y cómo afecta a tu web?</p>
+
+
+
+<h2 class="wp-block-heading"><img fetchpriority="high" fetchpriority="high" decoding="async" width="1638" height="1399" class="wp-image-7787" style="width: px;" src="https://asiescomo.com/wp-content/uploads/diseo-ux-ui-.jpg" alt="" srcset="https://asiescomo.com/wp-content/uploads/diseo-ux-ui-.jpg 1638w, https://asiescomo.com/wp-content/uploads/diseo-ux-ui--300x256.jpg 300w, https://asiescomo.com/wp-content/uploads/diseo-ux-ui--768x656.jpg 768w, https://asiescomo.com/wp-content/uploads/diseo-ux-ui--1536x1312.jpg 1536w" sizes="(max-width: 1638px) 100vw, 1638px" /><strong>Diseño UX y UI en una página web.</strong></h2>
+
+
+
+<p>El diseño UX (User Experience) es la Experiencia de Usuario, ese aspecto enfocado a la usabilidad y a facilitar la vida al usuario cuando está navegando. El diseño UI (User Interface) o Interfaz de Usuario, por su parte, se centra en la estética y en atraer la atención del usuario desde el primer momento para que se quede.</p>
+
+
+
+<div class="lista-entradas">
+<p style="font-size: 18px; font-weight: 800;">Puede interesarte:</p>
+<ul>
+<li><a href="https://asiescomo.com/crea-una-pagina-web-que-convierta-mas" target="_blank" rel="noopener noreferrer">Cómo hacer que tu página web que convierta más.</a></li>
+<li><a href="https://asiescomo.com/5-cosas-para-mejorar-tu-web" target="_blank" rel="noopener noreferrer">5 cosas que debes hacer para mejorar tu web.</a></li>
+<li><a href="https://asiescomo.com/problemas-comunes-migrar-wordpress" target="_blank" rel="noopener noreferrer">Solución a los 6 problemas más comunes tras migrar WordPress</a></li>
+<li><a href="https://asiescomo.com/como-migrar-wordpress-manualmente" target="_blank" rel="noopener noreferrer">Cómo migrar WordPress manualmente sin liarla.</a></li>
+<li><a href="https://asiescomo.com/debo-usar-divi-en-mi-web-pros-y-contras" target="_blank" rel="noopener noreferrer">¿Debo usar DIVI en mi web? Pros y contras.</a></li>
+</ul>
+</div>
+
+
+
+<h2 class="wp-block-heading"><strong>Qué es el diseño UX o User Experience.</strong></h2>
+
+
+
+<p>El diseño UX es lo que los usuarios perciben al interactuar con nuestra web, producto o servicio. Cómo se sienten en nuestro sitio. Un buen UX parte de ponerse en la piel de nuestros posibles clientes.</p>
+
+
+
+<p>Es la parte más técnica y analítica del proceso.</p>
+
+
+
+<p>Básicamente, el diseño UX es el análisis de diferentes aspectos con el fin de encontrar la estructura y optimización ideales para una experiencia de usuario satisfactoria, en este caso, cuando alguien esté navegando por nuestra web.</p>
+
+
+
+<p>La idea del diseño UX es descubrir las necesidades de los usuarios y lo que es importante para ellos, para así conectarlos con los objetivos de la empresa en cuestión y de su web.</p>
+
+
+
+<p>Para conseguir un buen UX ayuda tener:</p>
+
+
+
+<ul class="lista-numerica-blog wp-block-list"><li>Una estrategia de contenidos</li><li><a href="https://asiescomo.com/que-es-un-wireframe/" target="_blank" rel="noreferrer noopener">Trabajar los Wireframes antes de diseñar</a> para ver si la estructura funciona</li><li>Analizar nuestros objetivos y a nuestro público objetivo</li><li>Analizar el comportamiento y las acciones que se llevan a cabo en la erb</li></ul>
+
+
+
+<p>Pero, sobre todo, un buen diseño UX se traduce en facilitar al usuario una experiencia fácil, funcional y que cubra sus necesidades.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Qué es el diseño UI o User Interface.</strong></h2>
+
+
+
+<p>El diseño UI es la manera en la que se “pinta” la experiencia de usuario en nuestra página web.</p>
+
+
+
+<p>Es el Look and Feel, aquello que permite al usuario interactuar de manera efectiva con nuestro sitio.</p>
+
+
+
+<p>El diseño UI ayudará a destacar unos elementos sobre otros y dar feedback al usuario para facilitar “su guía” a través de nuestro sitio web.</p>
+
+
+
+<p>Además, será esencial para la adaptación responsive en los diferentes dispositivos y hacer de nuestra web un sitio cómodo y atractivo desde cualquier parte.</p>
+
+
+
+<p>El diseño UI será la apariencia de nuestra web, lo que la hará visualmente atractiva e impactante. El UI marca la diferencia de nuestro sitio y conecta nuestra marca con el usuario. El papel del diseño UI es muy importante a la hora de generar confianza y transmitir los valores de nuestra empresa.</p>
+
+
+
+<p>Para conseguir un buen UI ayuda:</p>
+
+
+
+<ul class="lista-numerica-blog wp-block-list"><li>Contar con un diseño profesional de impacto acorde a nuestra marca</li><li>Emplear formas, botones y otros elementos fácilmente reconocibles por el usuario</li><li>Tener una gran carga visual.</li><li>Establecer una jerarquía visual y dividir bien las diferentes áreas sin apelotonar</li><li>Proporcionar feedback a la interactividad del usuario con nuestros elementos</li></ul>
+
+
+
+<p>En definitiva, el UI será el que entre por los ojos del usuario (más vale resultar atractivo y agradable), para terminar de enamorar con el buen funcionamiento del UX.</p>
+
+
+
+<p>Si quieres saber más sobre cómo mejorar tu web, en uno de nuestros posts te <a href="https://asiescomo.com/5-cosas-para-mejorar-tu-web">hablamos de 5 cosas que puedes hacer.</a></p>
+
+
+
+<h2 class="wp-block-heading"><img decoding="async" width="1638" height="1400" class="wp-image-7788" style="width: px;" src="https://asiescomo.com/wp-content/uploads/cmo-trabajan-juntos-diseo-ux-y-diseo-ui.jpg" alt="" srcset="https://asiescomo.com/wp-content/uploads/cmo-trabajan-juntos-diseo-ux-y-diseo-ui.jpg 1638w, https://asiescomo.com/wp-content/uploads/cmo-trabajan-juntos-diseo-ux-y-diseo-ui-300x256.jpg 300w, https://asiescomo.com/wp-content/uploads/cmo-trabajan-juntos-diseo-ux-y-diseo-ui-768x656.jpg 768w, https://asiescomo.com/wp-content/uploads/cmo-trabajan-juntos-diseo-ux-y-diseo-ui-1536x1313.jpg 1536w" sizes="(max-width: 1638px) 100vw, 1638px" /><strong>Cómo trabajan juntos diseño UX y diseño UI en una página web.</strong></h2>
+
+
+
+<p>El diseño UX trata la usabilidad y el diseño UI busca ser atractivo. El primero quiere ofrecer una gran experiencia, mientras que el segundo quiere hacerla visible. Uno es práctico y el otro emocional. Uno es conceptual y el otro es tangible.</p>
+
+
+
+<p>El diseño UX trabaja el estudio y la estructuración y el diseño IU es la parte visual, el diseño propiamente dicho.</p>
+
+
+
+<p>Un buen UX puede verse afectado si un mal UI espanta al usuario por un mal diseño, de la misma manera que un buen UI no tiene nada que hacer si el usuario no sabe qué hacer o dónde ir. Digamos que uno no es sin el otro. Cada uno tiene su cometido y ambos se combinan a la perfección.</p>
+
+
+
+<p>En resumen, el diseño UX trata de descubrir lo que es importante para nuestro usuario y ofrecérselo en bandeja consiguiendo <a href="https://asiescomo.com/crea-una-pagina-web-que-convierta-mas">una página web que convierte más</a>. Por su parte, el diseño UI se centra en la interfaz y en cómo plasmar toda la información de manera visual y atractiva.</p>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-0932df8 elementor-widget elementor-widget-heading" data-id="0932df8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<span class="elementor-heading-title elementor-size-default">¿Qué te ha parecido el artículo?</span>				</div>
+				</div>
+				<div class="elementor-element elementor-element-944bdf5 elementor-widget elementor-widget-post-comments" data-id="944bdf5" data-element_type="widget" data-widget_type="post-comments.theme_comments">
+				<div class="elementor-widget-container">
+					<section id="comments" class="comments-area">
+
+	
+	<div id="respond" class="comment-respond">
+		<h2 id="reply-title" class="comment-reply-title">Deja una respuesta <small><a rel="nofollow" id="cancel-comment-reply-link" href="/diseno-ux-y-ui-en-mi-web/#respond" style="display:none;">Cancelar la respuesta</a></small></h2><form action="https://asiescomo.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comentario <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Nombre <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">Web</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Guarda mi nombre, correo electrónico y web en este navegador para la próxima vez que comente.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Publicar el comentario" /> <input type='hidden' name='comment_post_ID' value='5850' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f1e8ffcb08" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="167"/><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	
+</section><!-- .comments-area -->
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b530c1f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b530c1f" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div data-rocket-location-hash="028f2321af60c698d7eb1a54aeed5255" class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e3c7624" data-id="e3c7624" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f280636 elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-id="f280636" data-element_type="widget" data-settings="{&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;classic_columns&quot;:&quot;3&quot;,&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
+				<div class="elementor-widget-container">
+							<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+				<article class="elementor-post elementor-grid-item post-10059 post type-post status-publish format-standard has-post-thumbnail hentry category-branding category-diseno-grafico category-diseno-web">
+				<a class="elementor-post__thumbnail__link" href="https://asiescomo.com/solicitar-kit-digital/" tabindex="-1" >
+			<div class="elementor-post__thumbnail"><img loading="lazy" width="900" height="500" src="https://asiescomo.com/wp-content/uploads/solicitar-kit-digital.jpg" class="attachment-full size-full wp-image-10062" alt="" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<span class="elementor-post__title">
+			<a href="https://asiescomo.com/solicitar-kit-digital/" >
+				Cómo solicitar el Kit Digital: Guía paso a paso			</a>
+		</span>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-author">
+			Carlos Valder		</span>
+				<span class="elementor-post-date">
+			8 de septiembre de 2022		</span>
+				</div>
+		
+		<a class="elementor-post__read-more" href="https://asiescomo.com/solicitar-kit-digital/" aria-label="Más información sobre Cómo solicitar el Kit Digital: Guía paso a paso" tabindex="-1" >
+					</a>
+
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-9836 post type-post status-publish format-standard has-post-thumbnail hentry category-sin-categoria">
+				<a class="elementor-post__thumbnail__link" href="https://asiescomo.com/mejorar-mi-web/" tabindex="-1" >
+			<div class="elementor-post__thumbnail"><img loading="lazy" width="900" height="500" src="https://asiescomo.com/wp-content/uploads/mejorar-tu-pagina-web.jpg" class="attachment-full size-full wp-image-10049" alt="" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<span class="elementor-post__title">
+			<a href="https://asiescomo.com/mejorar-mi-web/" >
+				Web obsoleta: Cómo mejorar el diseño de mi web			</a>
+		</span>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-author">
+			Lourdes		</span>
+				<span class="elementor-post-date">
+			5 de septiembre de 2022		</span>
+				</div>
+		
+		<a class="elementor-post__read-more" href="https://asiescomo.com/mejorar-mi-web/" aria-label="Más información sobre Web obsoleta: Cómo mejorar el diseño de mi web" tabindex="-1" >
+					</a>
+
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-9837 post type-post status-publish format-standard has-post-thumbnail hentry category-sin-categoria">
+				<a class="elementor-post__thumbnail__link" href="https://asiescomo.com/el-diseno-editorial/" tabindex="-1" >
+			<div class="elementor-post__thumbnail"><img loading="lazy" width="900" height="500" src="https://asiescomo.com/wp-content/uploads/diseno-editorial-2.jpg" class="attachment-full size-full wp-image-10001" alt="Diseño editorial en una empresa" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<span class="elementor-post__title">
+			<a href="https://asiescomo.com/el-diseno-editorial/" >
+				¿En qué consiste el diseño editorial y para qué sirve?			</a>
+		</span>
+				<div class="elementor-post__meta-data">
+					<span class="elementor-post-author">
+			Lourdes		</span>
+				<span class="elementor-post-date">
+			28 de abril de 2022		</span>
+				</div>
+		
+		<a class="elementor-post__read-more" href="https://asiescomo.com/el-diseno-editorial/" aria-label="Más información sobre ¿En qué consiste el diseño editorial y para qué sirve?" tabindex="-1" >
+					</a>
+
+				</div>
+				</article>
+				</div>
+		
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="footer" data-elementor-id="337" class="elementor elementor-337 elementor-location-footer" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-f12261c elementor-section-full_width elementor-section-content-space-between footer elementor-section-height-default elementor-section-height-default" data-id="f12261c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/asiescomo.com\/wp-content\/uploads\/you-feel-alone.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+								<div class="elementor-background-video-container">
+													<video class="elementor-background-video-hosted" autoplay muted playsinline loop></video>
+											</div>
+									<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-afa490d" data-id="afa490d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-4743ee4 col-90 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4743ee4" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-aa4e45a" data-id="aa4e45a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-40d9b75 elementor-widget elementor-widget-heading" data-id="40d9b75" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">¿Te encuentras perdido?<br> No te preocupes, pregúntanos lo que sea.</h2>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2aaa2b8" data-id="2aaa2b8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3a40c24 elementor-button-align-start form-negro elementor-widget elementor-widget-form" data-id="3a40c24" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+							<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="337"/>
+			<input type="hidden" name="form_id" value="3a40c24"/>
+			<input type="hidden" name="referer_title" value="Diseño UX y UI. Qué son y cómo funcionan en mi web." />
+
+							<input type="hidden" name="queried_id" value="5850"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50">
+												<label for="form-field-name" class="elementor-field-label elementor-screen-only">
+								Name							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-xl  elementor-field-textual" placeholder="Name*">
+											</div>
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-xl  elementor-field-textual" placeholder="Email*" required="required">
+											</div>
+								<div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-message elementor-col-50">
+												<label for="form-field-message" class="elementor-field-label elementor-screen-only">
+								Message							</label>
+								<input size="1" type="tel" name="form_fields[message]" id="form-field-message" class="elementor-field elementor-size-xl  elementor-field-textual" placeholder="Teléfono*" pattern="[0-9()#&amp;+*-=.]+" title="Solo se aceptan números y caracteres de teléfono (#,-,*,etc).">
+
+						</div>
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_fb92dcb elementor-col-50">
+												<label for="form-field-field_fb92dcb" class="elementor-field-label elementor-screen-only">
+								¿Tienes página web?							</label>
+														<input size="1" type="text" name="form_fields[field_fb92dcb]" id="form-field-field_fb92dcb" class="elementor-field elementor-size-xl  elementor-field-textual" placeholder="¿Tienes página web?">
+											</div>
+								<div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-field_a82eff2 elementor-col-100">
+					<textarea class="elementor-field-textual elementor-field  elementor-size-xl" name="form_fields[field_a82eff2]" id="form-field-field_a82eff2" rows="4" placeholder="¿Qué necesitas?"></textarea>				</div>
+								<div class="elementor-field-type-text">
+					<input size="1" type="text" name="form_fields[field_c1dba6e]" id="form-field-field_c1dba6e" class="elementor-field elementor-size-xl " style="display:none !important;">				</div>
+								<div class="elementor-field-type-recaptcha elementor-field-group elementor-column elementor-field-group-field_c902d72 elementor-col-100">
+					<div class="elementor-field" id="form-field-field_c902d72"><div class="elementor-g-recaptcha" data-sitekey="6LesBs0UAAAAAKQ3q0Zm6Gw4AgQ5in-k-ARhKTO7" data-type="v2_checkbox" data-theme="dark" data-size="normal"></div></div>				</div>
+								<div class="elementor-field-type-acceptance elementor-field-group elementor-column elementor-field-group-field_1811f3e elementor-col-100 elementor-field-required">
+												<label for="form-field-field_1811f3e" class="elementor-field-label elementor-screen-only">
+								Política de privacidad							</label>
+								<div class="elementor-field-subgroup">
+			<span class="elementor-field-option">
+				<input type="checkbox" name="form_fields[field_1811f3e]" id="form-field-field_1811f3e" class="elementor-field elementor-size-xl  elementor-acceptance-field" required="required">
+				<label for="form-field-field_1811f3e">He leído y acepto la <a href="https://asiescomo.com/politica-de-privacidad">Política de Privacidad</a></label>			</span>
+		</div>
+						</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button class="elementor-button elementor-size-sm" type="submit">
+						<span class="elementor-button-content-wrapper">
+																						<span class="elementor-button-text">enviar</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-28bcb09 col-90 elementor-section-content-top elementor-hidden-tablet elementor-hidden-phone elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28bcb09" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-677896d" data-id="677896d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-48188a8 elementor-widget elementor-widget-image" data-id="48188a8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img src="https://asiescomo.com/wp-content/uploads/logo-blanco-como.svg" class="attachment-large size-large wp-image-349" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-b559b82 elementor-widget elementor-widget-text-editor" data-id="b559b82" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Estudio Creativo de Branding, Diseño Gráfico y Diseño Web en Madrid y donde llegue Internet</p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-a6a9c1c" data-id="a6a9c1c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6ce88bc elementor-widget elementor-widget-text-editor" data-id="6ce88bc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="#">hola@asiescomo.com</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-417ab71 elementor-widget elementor-widget-text-editor" data-id="417ab71" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="#">+34 636 974 870</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-3b2ff75 e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="3b2ff75" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-b48f6c3" href="#" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9719a9d" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-ef05356" data-id="ef05356" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fa3ab48 elementor-widget elementor-widget-heading" data-id="fa3ab48" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Menú</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e274d16 elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-global elementor-global-8565 elementor-widget-nav-menu" data-id="e274d16" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-e274d16" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-368"><a href="https://asiescomo.com/" class="elementor-item">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="https://asiescomo.com/branding/" class="elementor-item">Branding</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://asiescomo.com/diseno-web/" class="elementor-item">Diseño web</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="https://asiescomo.com/diseno-grafico/" class="elementor-item">Diseño gráfico</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-e274d16" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-368"><a href="https://asiescomo.com/" class="elementor-item" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="https://asiescomo.com/branding/" class="elementor-item" tabindex="-1">Branding</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://asiescomo.com/diseno-web/" class="elementor-item" tabindex="-1">Diseño web</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="https://asiescomo.com/diseno-grafico/" class="elementor-item" tabindex="-1">Diseño gráfico</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-45d1389" data-id="45d1389" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-761916f elementor-widget elementor-widget-heading" data-id="761916f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Para cotillear</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-762a2dd elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="762a2dd" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-762a2dd" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://asiescomo.com/conocenos/" class="elementor-item">Conócenos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://asiescomo.com/portfolio/" class="elementor-item">Portfolio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="https://asiescomo.com/blog/" class="elementor-item">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-377"><a href="/que-hablar" class="elementor-item">Trabaja con nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8956"><a href="https://asiescomo.com/que-hablar/" class="elementor-item">Contacto</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-762a2dd" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://asiescomo.com/conocenos/" class="elementor-item" tabindex="-1">Conócenos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://asiescomo.com/portfolio/" class="elementor-item" tabindex="-1">Portfolio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="https://asiescomo.com/blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-377"><a href="/que-hablar" class="elementor-item" tabindex="-1">Trabaja con nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8956"><a href="https://asiescomo.com/que-hablar/" class="elementor-item" tabindex="-1">Contacto</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-c221029" data-id="c221029" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1626ed8 elementor-widget elementor-widget-heading" data-id="1626ed8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Privacidad</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-db8343c elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="db8343c" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-db8343c" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-372"><a href="https://asiescomo.com/politica-de-cookies/" class="elementor-item">Política de Cookies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-373"><a href="https://asiescomo.com/politica-de-privacidad/" class="elementor-item">Política de Privacidad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7646"><a href="https://asiescomo.com/aviso-legal/" class="elementor-item">Aviso legal</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-db8343c" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-372"><a href="https://asiescomo.com/politica-de-cookies/" class="elementor-item" tabindex="-1">Política de Cookies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-373"><a href="https://asiescomo.com/politica-de-privacidad/" class="elementor-item" tabindex="-1">Política de Privacidad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7646"><a href="https://asiescomo.com/aviso-legal/" class="elementor-item" tabindex="-1">Aviso legal</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a510f2d col-90 elementor-section-content-top elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a510f2d" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b8a82d4" data-id="b8a82d4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ff0012a elementor-widget elementor-widget-text-editor" data-id="ff0012a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="#">hola@asiescomo.com</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-1b85404 elementor-widget elementor-widget-text-editor" data-id="1b85404" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="#">+34 636 974 870</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-059dabc e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="059dabc" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-b48f6c3" href="#" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9719a9d" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e905959 elementor-widget elementor-widget-spacer" data-id="e905959" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-83cc25d elementor-widget elementor-widget-heading" data-id="83cc25d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Menú</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-572abf7 elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="572abf7" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-572abf7" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-368"><a href="https://asiescomo.com/" class="elementor-item">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="https://asiescomo.com/branding/" class="elementor-item">Branding</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://asiescomo.com/diseno-web/" class="elementor-item">Diseño web</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="https://asiescomo.com/diseno-grafico/" class="elementor-item">Diseño gráfico</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-572abf7" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-368"><a href="https://asiescomo.com/" class="elementor-item" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="https://asiescomo.com/branding/" class="elementor-item" tabindex="-1">Branding</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-371"><a href="https://asiescomo.com/diseno-web/" class="elementor-item" tabindex="-1">Diseño web</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="https://asiescomo.com/diseno-grafico/" class="elementor-item" tabindex="-1">Diseño gráfico</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ebf6bbb elementor-widget elementor-widget-spacer" data-id="ebf6bbb" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1f431b4 elementor-widget elementor-widget-heading" data-id="1f431b4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Para cotillear</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f7c3120 elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="f7c3120" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-f7c3120" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://asiescomo.com/conocenos/" class="elementor-item">Conócenos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://asiescomo.com/portfolio/" class="elementor-item">Portfolio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="https://asiescomo.com/blog/" class="elementor-item">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-377"><a href="/que-hablar" class="elementor-item">Trabaja con nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8956"><a href="https://asiescomo.com/que-hablar/" class="elementor-item">Contacto</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-f7c3120" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-376"><a href="https://asiescomo.com/conocenos/" class="elementor-item" tabindex="-1">Conócenos</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-375"><a href="https://asiescomo.com/portfolio/" class="elementor-item" tabindex="-1">Portfolio</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-374"><a href="https://asiescomo.com/blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-377"><a href="/que-hablar" class="elementor-item" tabindex="-1">Trabaja con nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8956"><a href="https://asiescomo.com/que-hablar/" class="elementor-item" tabindex="-1">Contacto</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d933671 elementor-widget elementor-widget-spacer" data-id="d933671" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0e61992 elementor-widget elementor-widget-heading" data-id="0e61992" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Privacidad</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f1537b2 elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="f1537b2" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-f1537b2" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-372"><a href="https://asiescomo.com/politica-de-cookies/" class="elementor-item">Política de Cookies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-373"><a href="https://asiescomo.com/politica-de-privacidad/" class="elementor-item">Política de Privacidad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7646"><a href="https://asiescomo.com/aviso-legal/" class="elementor-item">Aviso legal</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-f1537b2" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-372"><a href="https://asiescomo.com/politica-de-cookies/" class="elementor-item" tabindex="-1">Política de Cookies</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-373"><a href="https://asiescomo.com/politica-de-privacidad/" class="elementor-item" tabindex="-1">Política de Privacidad</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7646"><a href="https://asiescomo.com/aviso-legal/" class="elementor-item" tabindex="-1">Aviso legal</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9e172c3 elementor-widget elementor-widget-spacer" data-id="9e172c3" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2711827 elementor-widget elementor-widget-image" data-id="2711827" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img src="https://asiescomo.com/wp-content/uploads/logo-blanco-como.svg" class="attachment-large size-large wp-image-349" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-0a12652 elementor-widget elementor-widget-text-editor" data-id="0a12652" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Estudio Creativo de Branding, Diseño Gráfico y Diseño Web en Madrid y donde llegue Internet</p>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-9063c3e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9063c3e" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-edc95e2" data-id="edc95e2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3776d2d elementor-widget elementor-widget-text-editor" data-id="3776d2d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Como &#8211; Estudio Creativo 2022 ©</p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d19d635" data-id="d19d635" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fa992a9 elementor-widget elementor-widget-text-editor" data-id="fa992a9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="https://asiescomo.com/agencias/">¿Eres una Agencia de Publicidad o Marketing? <strong>Esto te interesa.</strong></a>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-theme-child-master\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<!-- Consent Management powered by Complianz | GDPR/CCPA Cookie Consent https://wordpress.org/plugins/complianz-gdpr -->
+<div id="cmplz-cookiebanner-container"><div class="cmplz-cookiebanner cmplz-hidden banner-1 banner-a optin cmplz-center cmplz-categories-type-view-preferences" aria-modal="true" data-nosnippet="true" role="dialog" aria-live="polite" aria-labelledby="cmplz-header-1-optin" aria-describedby="cmplz-message-1-optin">
+	<div class="cmplz-header">
+		<div class="cmplz-logo"><a href="https://asiescomo.com/" class="custom-logo-link" rel="home"><img src="https://asiescomo.com/wp-content/uploads/logo-como.svg" class="custom-logo" alt="Como &#8211; Estudio Creativo" decoding="async" /></a></div>
+		<div class="cmplz-title" id="cmplz-header-1-optin">Gestionar consentimiento</div>
+		<div class="cmplz-close" tabindex="0" role="button" aria-label="Cerrar ventana">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+		</div>
+	</div>
+
+	<div class="cmplz-divider cmplz-divider-header"></div>
+	<div class="cmplz-body">
+		<div class="cmplz-message" id="cmplz-message-1-optin">Para ofrecer las mejores experiencias, utilizamos tecnologías como las cookies para almacenar y/o acceder a la información del dispositivo. El consentimiento de estas tecnologías nos permitirá procesar datos como el comportamiento de navegación o las identificaciones únicas en este sitio. No consentir o retirar el consentimiento, puede afectar negativamente a ciertas características y funciones.</div>
+		<!-- categories start -->
+		<div class="cmplz-categories">
+			<details class="cmplz-category cmplz-functional" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Funcional</span>
+							<span class='cmplz-always-active'>
+								<span class="cmplz-banner-checkbox">
+									<input type="checkbox"
+										   id="cmplz-functional-optin"
+										   data-category="cmplz_functional"
+										   class="cmplz-consent-checkbox cmplz-functional"
+										   size="40"
+										   value="1"/>
+									<label class="cmplz-label" for="cmplz-functional-optin" tabindex="0"><span class="screen-reader-text">Funcional</span></label>
+								</span>
+								Siempre activo							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-functional">El almacenamiento o acceso técnico es estrictamente necesario para el propósito legítimo de permitir el uso de un servicio específico explícitamente solicitado por el abonado o usuario, o con el único propósito de llevar a cabo la transmisión de una comunicación a través de una red de comunicaciones electrónicas.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-preferences" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Preferencias</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-preferences-optin"
+									   data-category="cmplz_preferences"
+									   class="cmplz-consent-checkbox cmplz-preferences"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-preferences-optin" tabindex="0"><span class="screen-reader-text">Preferencias</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-preferences">El almacenamiento o acceso técnico es necesario para la finalidad legítima de almacenar preferencias no solicitadas por el abonado o usuario.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-statistics" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Estadísticas</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-statistics-optin"
+									   data-category="cmplz_statistics"
+									   class="cmplz-consent-checkbox cmplz-statistics"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-statistics-optin" tabindex="0"><span class="screen-reader-text">Estadísticas</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-statistics">El almacenamiento o acceso técnico que es utilizado exclusivamente con fines estadísticos.</span>
+					<span class="cmplz-description-statistics-anonymous">El almacenamiento o acceso técnico que se utiliza exclusivamente con fines estadísticos anónimos. Sin un requerimiento, el cumplimiento voluntario por parte de tu proveedor de servicios de Internet, o los registros adicionales de un tercero, la información almacenada o recuperada sólo para este propósito no se puede utilizar para identificarte.</span>
+				</div>
+			</details>
+			<details class="cmplz-category cmplz-marketing" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Marketing</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-marketing-optin"
+									   data-category="cmplz_marketing"
+									   class="cmplz-consent-checkbox cmplz-marketing"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-marketing-optin" tabindex="0"><span class="screen-reader-text">Marketing</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-marketing">El almacenamiento o acceso técnico es necesario para crear perfiles de usuario para enviar publicidad, o para rastrear al usuario en una web o en varias web con fines de marketing similares.</span>
+				</div>
+			</details>
+		</div><!-- categories end -->
+			</div>
+
+	<div class="cmplz-links cmplz-information">
+		<a class="cmplz-link cmplz-manage-options cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">Administrar opciones</a>
+		<a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="#" data-relative_url="#cmplz-cookies-overview">Gestionar los servicios</a>
+		<a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="#" data-relative_url="#cmplz-tcf-wrapper">Gestionar {vendor_count} proveedores</a>
+		<a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/">Leer más sobre estos propósitos</a>
+			</div>
+
+	<div class="cmplz-divider cmplz-footer"></div>
+
+	<div class="cmplz-buttons">
+		<button class="cmplz-btn cmplz-accept">Aceptar</button>
+		<button class="cmplz-btn cmplz-deny">Denegar</button>
+		<button class="cmplz-btn cmplz-view-preferences">Ver preferencias</button>
+		<button class="cmplz-btn cmplz-save-preferences">Guardar preferencias</button>
+		<a class="cmplz-btn cmplz-manage-options tcf cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">Ver preferencias</a>
+			</div>
+
+	<div class="cmplz-links cmplz-documents">
+		<a class="cmplz-link cookie-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link privacy-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link impressum" href="#" data-relative_url="">{title}</a>
+			</div>
+
+</div>
+</div>
+					<div id="cmplz-manage-consent" data-nosnippet="true"><button class="cmplz-btn cmplz-hidden cmplz-manage-consent manage-consent-1">Gestionar consentimiento</button>
+
+</div>		<div data-elementor-type="popup" data-elementor-id="983" class="elementor elementor-983 elementor-location-popup" data-elementor-settings="{&quot;prevent_scroll&quot;:&quot;yes&quot;,&quot;entrance_animation&quot;:&quot;slideInRight&quot;,&quot;exit_animation&quot;:&quot;slideInRight&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.5,&quot;sizes&quot;:[]},&quot;open_selector&quot;:&quot;.open-pop-mobile&quot;,&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-b0fbd2d elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="b0fbd2d" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5914832" data-id="5914832" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-97f908d elementor-nav-menu__align-start elementor-nav-menu--dropdown-none elementor-widget elementor-widget-nav-menu" data-id="97f908d" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;vertical&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-caret-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;}}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-vertical e--pointer-none">
+				<ul id="menu-1-97f908d" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-987"><a href="https://asiescomo.com/" class="elementor-item">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989"><a href="https://asiescomo.com/branding/" class="elementor-item">Branding</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-991"><a href="https://asiescomo.com/diseno-web/" class="elementor-item">Diseño web</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-990"><a href="https://asiescomo.com/diseno-grafico/" class="elementor-item">Diseño gráfico</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993"><a href="https://asiescomo.com/conocenos/" class="elementor-item">Nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988"><a href="https://asiescomo.com/blog/" class="elementor-item">El Blog</a></li>
+</ul>			</nav>
+						<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-97f908d" class="elementor-nav-menu sm-vertical"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-987"><a href="https://asiescomo.com/" class="elementor-item" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-989"><a href="https://asiescomo.com/branding/" class="elementor-item" tabindex="-1">Branding</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-991"><a href="https://asiescomo.com/diseno-web/" class="elementor-item" tabindex="-1">Diseño web</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-990"><a href="https://asiescomo.com/diseno-grafico/" class="elementor-item" tabindex="-1">Diseño gráfico</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993"><a href="https://asiescomo.com/conocenos/" class="elementor-item" tabindex="-1">Nosotros</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-988"><a href="https://asiescomo.com/blog/" class="elementor-item" tabindex="-1">El Blog</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ea53aca elementor-widget elementor-widget-text-editor" data-id="ea53aca" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><a href="/portfolio">portfolio</a></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-7adc6e2 elementor-widget elementor-widget-text-editor" data-id="7adc6e2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><a href="/que-hablar">contactar</a></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-fbf81de elementor-widget elementor-widget-global elementor-global-1003 elementor-widget-text-editor" data-id="fbf81de" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="mailto:hola@asiescomo.com">hola@asiescomo.com</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-33a0807 elementor-widget elementor-widget-global elementor-global-1006 elementor-widget-text-editor" data-id="33a0807" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><a href="#">+34 636 974 870</a></p>
+<a href="#">+34 654 627 837</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-65352f5 e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-global elementor-global-1009 elementor-widget-social-icons" data-id="65352f5" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-b48f6c3" href="https://www.instagram.com/comocreativo/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9719a9d" href="https://www.facebook.com/comocreativo" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				<div data-elementor-type="popup" data-elementor-id="735" class="elementor elementor-735 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeIn&quot;,&quot;exit_animation&quot;:&quot;fadeIn&quot;,&quot;open_selector&quot;:&quot;.open-menu&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.299999999999999988897769753748434595763683319091796875,&quot;sizes&quot;:[]},&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:{&quot;devices_devices&quot;:[&quot;desktop&quot;],&quot;devices&quot;:&quot;yes&quot;}}" data-elementor-post-type="elementor_library">
+					<section class="elementor-section elementor-top-section elementor-element elementor-element-4a3776e col-90 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4a3776e" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div data-rocket-location-hash="c02d701dc4c0b49391115283d6eddaac" class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7ae71b4" data-id="7ae71b4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-d70cbf7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d70cbf7" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d3181f3" data-id="d3181f3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d196ec4 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-html" data-id="d196ec4" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					
+<div class="btn-container cta-menu" style="float: left;">
+<a href="https://new.asiescomo.com/" class="btn btn2" id="mar-top">home</a>
+</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-28d06d7 elementor-widget elementor-widget-text-editor" data-id="28d06d7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="https://asiescomo.com">home</a>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3102f0e menu-principal-popup animated-fast elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="3102f0e" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8770cf1" data-id="8770cf1" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b62362b elementor-flip-box--effect-push menu-hola elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="b62362b" data-element_type="widget" id="slow-flip" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Hola							</h3>
+						
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							<div class="desplegable-menu"><a href="/conocenos">Nosotros</a></div>						</h3>
+					
+					
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-880839b" data-id="880839b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-17bb341 elementor-flip-box--effect-push menu-tenemos elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="17bb341" data-element_type="widget" id="slow-flip" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Tenemos							</h3>
+						
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+					
+											<div class="elementor-flip-box__layer__description">
+							
+<div class="desplegable-menu"><a href="/branding">Branding</a></div>
+
+<div class="desplegable-menu"><a href="/diseno-web">Diseño web</a></div>
+
+<div class="desplegable-menu"><a href="/diseno-grafico">Diseño gráfico</a></div>						</div>
+					
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9eaef45" data-id="9eaef45" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2e93272 elementor-flip-box--effect-push menu-quehablar elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="2e93272" data-element_type="widget" id="slow-flip" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Que hablar							</h3>
+						
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							<div class="desplegable-menu"><a href="/que-hablar">Contacto</a></div>						</h3>
+					
+					
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-014412e elementor-section-height-min-height elementor-section-content-bottom animated-fast elementor-section-boxed elementor-section-height-default elementor-invisible" data-id="014412e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:100,&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-wide">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-14a883b" data-id="14a883b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-fdc304c grid-menu elementor-widget elementor-widget-heading" data-id="fdc304c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Portfolio</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-eb4bd56 elementor-widget elementor-widget-html" data-id="eb4bd56" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="btn-container mar-top btn-menu">
+<a href="/portfolio" class="btn btn2" id="mar-top ">ver trabajos</a>
+</div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b3bdd94" data-id="b3bdd94" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-891a015 grid-menu elementor-widget elementor-widget-heading" data-id="891a015" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">El blog</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8595cc4 elementor-widget elementor-widget-html" data-id="8595cc4" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="btn-container mar-top btn-menu">
+<a href="/blog" class="btn btn2" id="mar-top">ver entradas</a>
+</div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5904b45 bot-menu-hidden animated-fast elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="5904b45" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200,&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3435456" data-id="3435456" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-526f603 elementor-widget elementor-widget-text-editor" data-id="526f603" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Estudio de diseño web y diseño gráfico en Madrid y donde llegue Internet.</p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-02b9b09" data-id="02b9b09" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ed67a88 elementor-widget elementor-widget-global elementor-global-1003 elementor-widget-text-editor" data-id="ed67a88" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="mailto:hola@asiescomo.com">hola@asiescomo.com</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-7ae0b19 elementor-widget elementor-widget-global elementor-global-1006 elementor-widget-text-editor" data-id="7ae0b19" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><a href="#">+34 636 974 870</a></p>
+<a href="#">+34 654 627 837</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-58d359f e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-global elementor-global-1009 elementor-widget-social-icons" data-id="58d359f" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-b48f6c3" href="https://www.instagram.com/comocreativo/" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<i class="fab fa-instagram"></i>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9719a9d" href="https://www.facebook.com/comocreativo" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<i class="fab fa-facebook"></i>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0478066" data-id="0478066" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7533498 elementor-widget elementor-widget-global elementor-global-8758 elementor-widget-heading" data-id="7533498" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<span class="elementor-heading-title elementor-size-default">También queremos colaborar contigo si...</span>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a635dff elementor-widget elementor-widget-html" data-id="a635dff" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="btn-container-small btn-menu-small">
+<a href="/agencias" class="btn-small btn2-small" id="mar-top">eres una agencia de Marketing</a>
+</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-61f2d12 elementor-widget elementor-widget-html" data-id="61f2d12" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="btn-container-small btn-menu-small">
+<a href="/desarrolladores-software" class="btn-small btn2-small" id="mar-top">eres desarrollador de software</a>
+</div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-1943131 bot-menu-show elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1943131" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-eb94159" data-id="eb94159" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7e2812d elementor-widget elementor-widget-global elementor-global-8758 elementor-widget-heading" data-id="7e2812d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<span class="elementor-heading-title elementor-size-default">También queremos colaborar contigo si...</span>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-786bdeb bot-menu-show elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="786bdeb" data-element_type="section" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7d1393b" data-id="7d1393b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e8ddf4e elementor-widget elementor-widget-html" data-id="e8ddf4e" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="btn-container-small btn-menu-small">
+<a href="https://asiescomo.com/agencias" class="btn-small btn2-small" id="mar-top">eres una agencia de Marketing</a>
+</div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-322c2d3" data-id="322c2d3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ae765e9 elementor-widget elementor-widget-html" data-id="ae765e9" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<div class="btn-container-small btn-menu-small">
+<a href="/desarrolladores-software" class="btn-small btn2-small" id="mar-top">eres desarrollador de Software</a>
+</div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-61ff0a4" data-id="61ff0a4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e5445ad elementor-widget elementor-widget-text-editor" data-id="e5445ad" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="#">hola@asiescomo.com</a>								</div>
+				</div>
+				<div class="elementor-element elementor-element-d73d86a elementor-widget elementor-widget-text-editor" data-id="d73d86a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<a href="#">+34 636 974 870</a>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+					<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script id="jqvalidate-js-extra">
+var mc_validate_strings = {"mc_field_required":"Este campo es obligatorio.","mc_valid_number":"Por favor escribe un n\u00famero v\u00e1lido."};
+</script>
+<script src="https://asiescomo.com/wp-content/plugins/mortgage-calculator/js/jquery.validate.min.js?ver=1.3.0" id="jqvalidate-js"></script>
+<script id="mortgage-calculator-js-extra">
+var mc_strings = {"mc_output_string":"Capital principal: [mortgage_amount] LINEBREAK A\u00f1os: [amortization_years] LINEBREAK Pago Mensual: [mortgage_payment] LINEBREAK Saldo a pagar, con intereses: [total_mortgage_interest] LINEBREAK Total, con pago inicial: [total_mortgage_down_payment] LINEBREAK ","mc_currency_sign":"\u20ac","mc_currency_sign_position":"after","mc_thousand_separator":".","mc_decimal_separator":",","mc_number_of_decimals":"2"};
+</script>
+<script data-minify="1" src="https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/mortgage-calculator/js/mortgage-calculator.js?ver=1712924438" id="mortgage-calculator-js"></script>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/asiescomo.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.27.0" id="e-sticky-js"></script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script src="https://asiescomo.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script src="https://asiescomo.com/wp-content/uploads/wpmss/wpmssab.min.js?ver=1604692616" id="wpmssab-js"></script>
+<script src="https://asiescomo.com/wp-content/plugins/mousewheel-smooth-scroll/js/SmoothScroll.min.js?ver=1.5.1" id="SmoothScroll-js"></script>
+<script src="https://asiescomo.com/wp-content/uploads/wpmss/wpmss.min.js?ver=1604692616" id="wpmss-js"></script>
+<script id="cmplz-cookiebanner-js-extra">
+var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_ajax_content":"","banner_version":"12","version":"7.4.0.1","store_consent":"","do_not_track_enabled":"1","consenttype":"optin","region":"eu","geoip":"","dismiss_timeout":"","disable_cookiebanner":"","soft_cookiewall":"","dismiss_on_scroll":"","cookie_expiry":"365","url":"https:\/\/asiescomo.com\/wp-json\/complianz\/v1\/","locale":"lang=es&locale=es_ES","set_cookies_on_root":"","cookie_domain":"","current_policy_id":"31","cookie_path":"\/","categories":{"statistics":"estad\u00edsticas","marketing":"m\u00e1rketing"},"tcf_active":"","placeholdertext":"Haz clic para aceptar cookies de marketing y permitir este contenido","css_file":"https:\/\/asiescomo.com\/wp-content\/uploads\/complianz\/css\/banner-{banner_id}-{type}.css?v=12","page_links":{"eu":{"cookie-statement":{"title":"Pol\u00edtica de cookies","url":"https:\/\/asiescomo.com\/politica-de-cookies\/"},"privacy-statement":{"title":"Declaraci\u00f3n de privacidad","url":"https:\/\/asiescomo.com\/politica-de-privacidad\/"}}},"tm_categories":"","forceEnableStats":"","preview":"","clean_cookies":"","aria_label":"Haz clic para aceptar cookies de marketing y permitir este contenido"};
+</script>
+<script defer src="https://asiescomo.com/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=1744839893" id="cmplz-cookiebanner-js"></script>
+<script id="cmplz-cookiebanner-js-after">
+		if ('undefined' != typeof window.jQuery) {
+			jQuery(document).ready(function ($) {
+				$(document).on('elementor/popup/show', () => {
+					let rev_cats = cmplz_categories.reverse();
+					for (let key in rev_cats) {
+						if (rev_cats.hasOwnProperty(key)) {
+							let category = cmplz_categories[key];
+							if (cmplz_has_consent(category)) {
+								document.querySelectorAll('[data-category="' + category + '"]').forEach(obj => {
+									cmplz_remove_placeholder(obj);
+								});
+							}
+						}
+					}
+
+					let services = cmplz_get_services_on_page();
+					for (let key in services) {
+						if (services.hasOwnProperty(key)) {
+							let service = services[key].service;
+							let category = services[key].category;
+							if (cmplz_has_service_consent(service, category)) {
+								document.querySelectorAll('[data-service="' + service + '"]').forEach(obj => {
+									cmplz_remove_placeholder(obj);
+								});
+							}
+						}
+					}
+				});
+			});
+		}
+    
+    
+		
+			document.addEventListener("cmplz_enable_category", function(consentData) {
+				var category = consentData.detail.category;
+				var services = consentData.detail.services;
+				var blockedContentContainers = [];
+				let selectorVideo = '.cmplz-elementor-widget-video-playlist[data-category="'+category+'"],.elementor-widget-video[data-category="'+category+'"]';
+				let selectorGeneric = '[data-cmplz-elementor-href][data-category="'+category+'"]';
+				for (var skey in services) {
+					if (services.hasOwnProperty(skey)) {
+						let service = skey;
+						selectorVideo +=',.cmplz-elementor-widget-video-playlist[data-service="'+service+'"],.elementor-widget-video[data-service="'+service+'"]';
+						selectorGeneric +=',[data-cmplz-elementor-href][data-service="'+service+'"]';
+					}
+				}
+				document.querySelectorAll(selectorVideo).forEach(obj => {
+					let elementService = obj.getAttribute('data-service');
+					if ( cmplz_is_service_denied(elementService) ) {
+						return;
+					}
+					if (obj.classList.contains('cmplz-elementor-activated')) return;
+					obj.classList.add('cmplz-elementor-activated');
+
+					if ( obj.hasAttribute('data-cmplz_elementor_widget_type') ){
+						let attr = obj.getAttribute('data-cmplz_elementor_widget_type');
+						obj.classList.removeAttribute('data-cmplz_elementor_widget_type');
+						obj.classList.setAttribute('data-widget_type', attr);
+					}
+					if (obj.classList.contains('cmplz-elementor-widget-video-playlist')) {
+						obj.classList.remove('cmplz-elementor-widget-video-playlist');
+						obj.classList.add('elementor-widget-video-playlist');
+					}
+					obj.setAttribute('data-settings', obj.getAttribute('data-cmplz-elementor-settings'));
+					blockedContentContainers.push(obj);
+				});
+
+				document.querySelectorAll(selectorGeneric).forEach(obj => {
+					let elementService = obj.getAttribute('data-service');
+					if ( cmplz_is_service_denied(elementService) ) {
+						return;
+					}
+					if (obj.classList.contains('cmplz-elementor-activated')) return;
+
+					if (obj.classList.contains('cmplz-fb-video')) {
+						obj.classList.remove('cmplz-fb-video');
+						obj.classList.add('fb-video');
+					}
+
+					obj.classList.add('cmplz-elementor-activated');
+					obj.setAttribute('data-href', obj.getAttribute('data-cmplz-elementor-href'));
+					blockedContentContainers.push(obj.closest('.elementor-widget'));
+				});
+
+				/**
+				 * Trigger the widgets in Elementor
+				 */
+				for (var key in blockedContentContainers) {
+					if (blockedContentContainers.hasOwnProperty(key) && blockedContentContainers[key] !== undefined) {
+						let blockedContentContainer = blockedContentContainers[key];
+						if (elementorFrontend.elementsHandler) {
+							elementorFrontend.elementsHandler.runReadyTrigger(blockedContentContainer)
+						}
+						var cssIndex = blockedContentContainer.getAttribute('data-placeholder_class_index');
+						blockedContentContainer.classList.remove('cmplz-blocked-content-container');
+						blockedContentContainer.classList.remove('cmplz-placeholder-' + cssIndex);
+					}
+				}
+
+			});
+		
+		
+</script>
+<script src="https://asiescomo.com/wp-includes/js/comment-reply.min.js?ver=6.8.1" id="comment-reply-js" async data-wp-strategy="async"></script>
+<script data-minify="1" defer src="https://asiescomo.com/wp-content/cache/min/1/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1712924438" id="akismet-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://www.google.com/recaptcha/api.js?render=explicit&amp;ver=3.27.0" id="elementor-recaptcha-api-js"></script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.27.0" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.4" id="elementor-webpack-runtime-js"></script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.4" id="elementor-frontend-modules-js"></script>
+<script src="https://asiescomo.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://asiescomo.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/asiescomo.com\/wp-admin\/admin-ajax.php","nonce":"d95b04896c","urls":{"assets":"https:\/\/asiescomo.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/asiescomo.com\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"es_ES","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/asiescomo.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.27.0" id="elementor-pro-frontend-js"></script>
+<script src="https://asiescomo.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir v\u00eddeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Diapositiva siguiente","a11yCarouselFirstSlideMessage":"Esta es la primera diapositiva","a11yCarouselLastSlideMessage":"Esta es la \u00faltima diapositiva","a11yCarouselPaginationBulletMessage":"Ir a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"M\u00f3vil vertical","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f3vil horizontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta horizontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.28.4","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_local_google_fonts":true,"theme_builder_v2":true,"editor_v2":true,"home_screen":true},"urls":{"assets":"https:\/\/asiescomo.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/asiescomo.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/asiescomo.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"5ba1a1cdb9"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":5850,"title":"Dise%C3%B1o%20UX%20y%20UI.%20Qu%C3%A9%20son%20y%20c%C3%B3mo%20funcionan%20en%20mi%20web.","excerpt":"","featuredImage":"https:\/\/asiescomo.com\/wp-content\/uploads\/featured_ux-ui.jpg"}};
+</script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4" id="elementor-frontend-js"></script>
+<script src="https://asiescomo.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.27.0" id="pro-elements-handlers-js"></script>
+<script id="jet-elements-js-extra">
+var jetElements = {"ajaxUrl":"https:\/\/asiescomo.com\/wp-admin\/admin-ajax.php","isMobile":"false","templateApiUrl":"https:\/\/asiescomo.com\/wp-json\/jet-elements-api\/v1\/elementor-template","devMode":"false","messages":{"invalidMail":"Please specify a valid e-mail"}};
+</script>
+<script src="https://asiescomo.com/wp-content/plugins/jet-elements/assets/js/jet-elements.min.js?ver=2.7.3" id="jet-elements-js"></script>
+<script id="jet-tabs-frontend-js-extra">
+var JetTabsSettings = {"ajaxurl":"https:\/\/asiescomo.com\/wp-admin\/admin-ajax.php","isMobile":"false","templateApiUrl":"https:\/\/asiescomo.com\/wp-json\/jet-tabs-api\/v1\/elementor-template","devMode":"false","isSelfRequest":""};
+</script>
+<script src="https://asiescomo.com/wp-content/plugins/jet-tabs/assets/js/jet-tabs-frontend.min.js?ver=2.2.6.2" id="jet-tabs-frontend-js"></script>
+<!-- Statistics script Complianz GDPR/CCPA -->
+						<script type="text/plain"							data-category="statistics">window['gtag_enable_tcf_support'] = false;
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '', {
+	cookie_flags:'secure;samesite=none',
+	
+});
+</script>
+<script>var rocket_beacon_data = {"ajax_url":"https:\/\/asiescomo.com\/wp-admin\/admin-ajax.php","nonce":"238edbd0be","url":"https:\/\/asiescomo.com\/diseno-ux-y-ui-en-mi-web","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800}</script><script data-name="wpr-wpr-beacon" src='https://asiescomo.com/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script><script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1752562298 -->

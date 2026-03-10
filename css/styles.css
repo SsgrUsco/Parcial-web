@@ -1,0 +1,28 @@
+body {
+  color: #222;
+  background: #fff;
+}
+
+
+/* Dark Mode styles */
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme section {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark-theme div  {
+  color: #eee;
+  background: #1e1e1e;
+}
+
+
+
+
+.card {
+    margin: 10px;
+    padding: 10px;
+}
